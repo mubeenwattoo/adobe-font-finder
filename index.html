@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adobe's Font Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="background">
+
+    
+
+    <div class="top-bar">
+  <img src="./images/logo.png" alt="logo">
+
+  <!-- Menu Icon -->
+  <div class="menu-toggle" id="menuToggle">
+   
+
+
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.6667 10.6667H3.33341C2.96522 10.6667 2.66675 10.9651 2.66675 11.3333V12.6667C2.66675 13.0349 2.96522 13.3333 3.33341 13.3333H20.6667C21.0349 13.3333 21.3334 13.0349 21.3334 12.6667V11.3333C21.3334 10.9651 21.0349 10.6667 20.6667 10.6667Z" fill="#2C2C2C"/>
+<path d="M20.6667 4H3.33341C2.96522 4 2.66675 4.29848 2.66675 4.66667V6C2.66675 6.36819 2.96522 6.66667 3.33341 6.66667H20.6667C21.0349 6.66667 21.3334 6.36819 21.3334 6V4.66667C21.3334 4.29848 21.0349 4 20.6667 4Z" fill="#2C2C2C"/>
+<path d="M20.6667 17.3333H3.33341C2.96522 17.3333 2.66675 17.6318 2.66675 18V19.3333C2.66675 19.7015 2.96522 20 3.33341 20H20.6667C21.0349 20 21.3334 19.7015 21.3334 19.3333V18C21.3334 17.6318 21.0349 17.3333 20.6667 17.3333Z" fill="#2C2C2C"/>
+</svg>
+
+
+  </div>
+
+  <!-- Navigation Links -->
+  <nav class="nav-links" id="navLinks">
+    <a href="#">Acrobat Online Tools</a>
+    <a href="#">Free AI Font Generator</a>
+    <a href="#">Useful resources</a>
+  </nav>
+</div>
+
+
+    <div class="content-box">
+      <h1>Discover your font personality</h1>
+      <p class="first-para">
+        Fonts and typefaces are not just a design choice, they can express hidden meanings for the reader. Whether bold and assertive like Impact, elegant like Garamond, or child-like like Comic Sans, your font and typeface preference communicates more than you might realize.
+        <br/><br/>
+        Adobe has created your own personal Font Finder, an interactive tool to help you discover your own personal typeface and how it reflects your own personality.
+        <br/><br/>
+        Find which font best matches your creative energy and communication style.
+      </p>
+    </div>
+
+    <!-- CTA Button -->
+    <div class="button-container">
+      <button>Take the quiz</button>
+    </div>
+
+  </div>
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+
+  menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('open');
+    navLinks.classList.toggle('open');
+  });
+</script>
+
+</body>
+</html>
