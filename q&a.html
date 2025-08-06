@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section Q&A</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="background" style="
+  background: url('./images/bg-image-2.png') no-repeat center center/cover;
+    
+    ">
+
+        <div class="top-bar top-bar-2">
+            <img src="./images/logo.png" alt="logo">
+
+            <!-- Menu Icon -->
+            <div class="menu-toggle" id="menuToggle">
+
+
+
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20.6667 10.6667H3.33341C2.96522 10.6667 2.66675 10.9651 2.66675 11.3333V12.6667C2.66675 13.0349 2.96522 13.3333 3.33341 13.3333H20.6667C21.0349 13.3333 21.3334 13.0349 21.3334 12.6667V11.3333C21.3334 10.9651 21.0349 10.6667 20.6667 10.6667Z"
+                        fill="#2C2C2C" />
+                    <path
+                        d="M20.6667 4H3.33341C2.96522 4 2.66675 4.29848 2.66675 4.66667V6C2.66675 6.36819 2.96522 6.66667 3.33341 6.66667H20.6667C21.0349 6.66667 21.3334 6.36819 21.3334 6V4.66667C21.3334 4.29848 21.0349 4 20.6667 4Z"
+                        fill="#2C2C2C" />
+                    <path
+                        d="M20.6667 17.3333H3.33341C2.96522 17.3333 2.66675 17.6318 2.66675 18V19.3333C2.66675 19.7015 2.96522 20 3.33341 20H20.6667C21.0349 20 21.3334 19.7015 21.3334 19.3333V18C21.3334 17.6318 21.0349 17.3333 20.6667 17.3333Z"
+                        fill="#2C2C2C" />
+                </svg>
+
+
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="nav-links" id="navLinks">
+                <a href="#">Acrobat Online Tools</a>
+                <a href="#">Free AI Font Generator</a>
+                <a href="#">Useful resources</a>
+            </nav>
+        </div>
+
+        <a href="#"><button class="question-btn">Question One</button> </a>
+
+        <h2 class="questions-heading">How would you describe your <br class="text-break" /> personal brand?</h2>
+
+
+        <div class="card">
+            <p class="question">Please select one answer</p>
+            <form>
+                <label class="option">
+                    <input type="radio" name="tone" />
+                    <span>Warm and conversational</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="tone" />
+                    <span>Bold and punchy</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="tone" />
+                    <span>Elegant and refined</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="tone" />
+                    <span>Quirky and expressive</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="tone" />
+                    <span>Minimal and precise</span>
+                </label>
+            </form>
+        </div>
+
+        <div class="semi-circle">
+         <a href="#">   <button class="submit-btn" disabled>Submit answer</button> </a>
+            <div class="pagination">
+                <div class="dot active">1</div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('open');
+            navLinks.classList.toggle('open');
+        });
+    </script>
+    <script>
+    const radios = document.querySelectorAll('input[name="tone"]');
+    const submitBtn = document.querySelector('.submit-btn');
+
+    radios.forEach(radio => {
+      radio.addEventListener('change', () => {
+        submitBtn.disabled = false;
+        submitBtn.classList.add('enabled');
+      });
+    });
+  </script>
+
+</body>
+
+</html>
