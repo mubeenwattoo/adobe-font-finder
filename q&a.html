@@ -9,7 +9,7 @@
 </head>
 
 <body>
-
+ <div class="next-bg"></div>
     <div class="background" style="
   background: url('./images/bg-image-2.png') no-repeat center center/cover;
     
@@ -115,6 +115,13 @@
         submitBtn.classList.add('enabled');
       });
     });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+  document.querySelector('.questions-heading').style.animationPlayState = 'running';
+  document.querySelector('.card').style.animationPlayState = 'running';
+});
+
   </script>
 
 </body>

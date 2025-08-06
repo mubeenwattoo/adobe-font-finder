@@ -65,5 +65,31 @@
   });
 </script>
 
+
+
+<script>
+  const quizBtn = document.querySelector('.button-container a');
+  const background = document.querySelector('.background');
+  const contentBox = document.querySelector('.content-box');
+  const buttonContainer = document.querySelector('.button-container');
+
+  quizBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    // Animate content upward
+    contentBox.classList.add('move-up');
+    buttonContainer.classList.add('move-up');
+
+    // Animate circle collapse
+    background.classList.add('collapse');
+
+    // Redirect after animation
+    setTimeout(() => {
+      window.location.href = quizBtn.getAttribute('href');
+    }, 1200);
+  });
+</script>
+
+
 </body>
 </html>
